@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="746.0" prefWidth="1036.0">
+         <children>
+            <TextArea fx:id="payload" layoutX="81.0" layoutY="527.0" prefHeight="41.0" prefWidth="162.0" promptText="payload " />
+            <Button fx:id="Deliveryzone" layoutX="50.0" layoutY="37.0" mnemonicParsing="false" prefHeight="367.0" prefWidth="930.0" text="Deliveryzone" textAlignment="JUSTIFY" wrapText="true" />
+            <TextArea fx:id="criteria" layoutX="81.0" layoutY="585.0" prefHeight="41.0" prefWidth="162.0" promptText="criteria" />
+            <TextArea fx:id="id" layoutX="260.0" layoutY="527.0" prefHeight="41.0" prefWidth="162.0" promptText="id" />
+            <TextArea fx:id="category" layoutX="260.0" layoutY="585.0" prefHeight="41.0" prefWidth="162.0" promptText="category" />
+            <Button fx:id="displayall" layoutX="597.0" layoutY="573.0" mnemonicParsing="false" onAction="#pulleveryone" text="displayAll" />
+            <Button fx:id="parameterdisplay" layoutX="727.0" layoutY="573.0" mnemonicParsing="false" onAction="#pullsomeone" text="ParameterDisplay" />
+            <Button fx:id="updateidwithpayload" layoutX="623.0" layoutY="502.0" mnemonicParsing="false" onAction="#changeworker" text="UpdateIDwithPayload" />
+            <Button fx:id="deleteid" layoutX="806.0" layoutY="502.0" mnemonicParsing="false" onAction="#deleteemployee" text="deleteID" />
+            <Button fx:id="inputpayload" layoutX="490.0" layoutY="502.0" mnemonicParsing="false" onAction="#insertemployee" text="inputPayload" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
